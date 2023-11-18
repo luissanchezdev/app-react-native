@@ -1,10 +1,10 @@
 import { Alert, View, Text, TouchableOpacity } from 'react-native';
-import ListPost from '../components/ListPost';
+import ListPosts from '../components/ListPosts';
 
 const App = () => {
   return (
     <View>
-      <ListPost />
+      <ListPosts />
     </View>
   )
 }
