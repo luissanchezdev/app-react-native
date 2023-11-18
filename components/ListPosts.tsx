@@ -1,6 +1,7 @@
 import React from 'react'
 import { Text, View, FlatList, StyleSheet } from 'react-native'
 import { posts } from '../constants/data'
+import StyledText from './StyledText'
 import Post from './Post'
 
 const styles = StyleSheet.create({
@@ -19,13 +20,11 @@ const styles = StyleSheet.create({
 })
 
 const ListPost = () => {
-  console.log({ posts })
 
   return (
     <>
-      <Text style={ styles.title }> Posts </Text>
+      <StyledText fontSize='big' color='primary' fontWeight='bold' > Posts </StyledText>
       <FlatList
-        style= { styles.container }
         data = { posts }
         ItemSeparatorComponent={() => <Text> </Text>}
         renderItem = { ({ item : post}) => {
